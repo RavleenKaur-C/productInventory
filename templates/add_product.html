@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Add a New Product</h2>
+<form method="POST">
+    <label>Name:
+        <input type="text" name="name" required>
+    </label>
+    <label>Description:
+        <input type="text" name="description">
+    </label>
+
+    <label>Category (select or type new):</label>
+    <select name="category">
+        <option value="">-- Select a Category --</option>
+        {% for cat in categories %}
+            <option value="{{ cat.category_id }}">{{ cat.name }}</option>
+        {% endfor %}
+    </select>
+    <input type="text" name="new_category" placeholder="Or enter new category">
+
+    <label>Supplier (select or type new):</label>
+    <select name="supplier">
+        <option value="">-- Select a Supplier --</option>
+        {% for sup in suppliers %}
+            <option value="{{ sup.supplier_id }}">{{ sup.name }}</option>
+        {% endfor %}
+    </select>
+    <input type="text" name="new_supplier" placeholder="Or enter new supplier">
+    <input type="text" name="new_supplier_contact" placeholder="Supplier contact info">
+
+    <label>Quantity:
+        <input type="number" name="quantity" value="0" min="0" required>
+    </label>
+    <label>Price:
+        <input type="number" step="0.01" name="price" value="0.00" min="0" required>
+    </label>
+
+    <button type="submit">Add Product</button>
+</form>
+{% endblock %}

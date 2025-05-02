@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Inventory Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <h1>🧾 Product Inventory Tracker</h1>
+    <nav>
+        <a href="{{ url_for('list_products') }}">All Products</a>
+        <a href="{{ url_for('add_product') }}">Add Product</a>
+        <a href="{{ url_for('report') }}">Report</a>
+
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
