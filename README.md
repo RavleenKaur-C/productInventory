@@ -1,11 +1,11 @@
-# 🗃 Inventory Management System
+# Inventory Management System
 
 A **Flask + SQLite** web application for managing products, categories, suppliers, and stock logs.  
 Supports adding, editing, deleting products, and generating dynamic reports with filters.
 
 ---
 
-## 📌 Features
+## Features
 
 - **Product Management**
   - Add, update, and delete products
@@ -29,7 +29,7 @@ Supports adding, editing, deleting products, and generating dynamic reports with
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Backend:** Flask (Python)
 - **Database:** SQLite (Peewee ORM)
@@ -39,6 +39,8 @@ Supports adding, editing, deleting products, and generating dynamic reports with
 ---
 
 ## 📂 Project Structure
+```plaintext
+
 
 inventory-app/
 │
@@ -52,10 +54,10 @@ inventory-app/
 │   ├── edit_product.html # Edit product form
 │   └── report.html       # Report generation page
 └── README.md             # Project documentation
-
+```
 ---
 
-## 🚀 Setup & Run Locally
+## Setup & Run Locally
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/inventory-app.git
